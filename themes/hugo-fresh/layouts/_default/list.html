@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ partial "navbar.html" . }}
+<main>
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-centered-tablet-portrait">
+                    <h1 class="title section-title">{{ .Title }}</h1>
+                    <h5 class="subtitle is-5 is-muted">{{ .Params.Subtitle }}</h5>
+                    <div class="divider"></div>
+                </div>
+            </div>
+
+            <div class="content">
+                {{ .Content }}
+            </div>
+            <div class="archive">
+                    <!-- Ranges through content/posts/*.md -->
+                    {{ range .Pages.ByDate.Reverse }}
+
+                        <article class="archive-item">
+<!--                            {{- $author := .Params.author | default "klabs" }}-->
+                            <a href="{{.Permalink}}" class="archive-item-link">
+                                <span>{{.Title}}</span>
+                            </a>
+<!--                            <span class="archive-item-author" >author:{{$author}}</span>-->
+                            <span class="archive-item-date" >{{.Date.Format "2006-01-02"}}</span>
+                        </article>
+                    {{ end }}
+            </div>
+        </div>
+    </section>
+</main>
+
+{{ partial "footer.html" . }}
+{{ end }}

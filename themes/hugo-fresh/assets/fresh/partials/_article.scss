@@ -1,0 +1,30 @@
+/* ==========================================================================
+Article Styles
+========================================================================== */
+
+.archive {
+  .archive-item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0.35rem 0 0.25rem 0.25rem;
+    justify-content: space-between;
+    .archive-item-link{
+      font-size: 1.15rem;
+      min-width: 10%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #161209;
+      :hover {
+        color: $primary;
+      }
+    }
+    .archive-item-date {
+      text-align: right;
+      width: 8rem;
+      color: #a9a9b3;
+    }
+  }
+}
+

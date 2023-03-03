@@ -1,0 +1,44 @@
+/* ==========================================================================
+Fresh Footer
+========================================================================== */
+
+footer.footer-dark {
+    background: $light-grey;
+    color: $blue-grey;
+    .columns {
+        margin-top: 35px;
+    }
+    .footer-logo {
+        img {
+            height: 120px;
+        }
+    }
+    .footer-column {
+        .footer-header h3 {
+            font-weight:500;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        ul.link-list {
+            line-height: 40px;
+            font-size: 1.0rem;
+            a {
+                color: $medium-grey;
+                font-weight: 400;
+                transition: all 0.5s;
+            }
+            :hover {
+                color: $primary;
+            }
+        }
+        .level-item .icon {
+            color: $secondary;
+            transition: all 0.5s;
+            :hover {
+                color: $smoke-white;
+            }
+        }
+    }
+}

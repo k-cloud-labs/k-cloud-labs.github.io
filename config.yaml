@@ -1,0 +1,181 @@
+baseURL: https://l-cloud-labs.github.io/
+languageCode: en-us
+title: K-Cloud-Labs
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+#  - taxonomy
+#  - taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as metadata; describe your site to make Google Bots happy
+  description: k-cloud-labs official website.
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  navbarlogo:
+    # Logo (from static/images/logos/___)
+    image: logos/logo-v2.svg
+    link: /
+    # Default width/height. Uncomment if you need to change
+    # width: 150
+    # height: 64
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Kubernetes. Cloud.
+    # Hero subtitle (optional)
+    subtitle: We are dreamers and we want to make the world better and no harm to programmers.
+    # Button text
+    buttontext: Get started
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: other/hugo-logo.png
+    # Footer logos (from static/images/logos/clients/*.svg)
+    # urls are optional
+    clientlogos:
+      - logo: systek
+        url: https://google.com
+      - logo: tribe
+        url: https://stefma.github.io/hugo-fresh/
+      - logo: kromo
+        url: https://github.com/StefMa/hugo-fresh
+      - logo: infinite
+        url: https://hugo-fresh.vercel.app/
+      - logo: gutwork
+        url: https://bulma.io/
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+    - title: Features
+      url: /features
+    - title: Blogs
+      url: /blog
+    - title: Projects
+      sublinks:
+        - title: kinitires
+          url: /
+        - title: kluster-capacity
+          url: /
+    - title: About Us
+      url: /about-us
+      button: true
+  section1:
+    title: Our Projects
+    subtitle: generate power via love
+    tiles:
+      - title: Kinitiras
+        icon: mouse-globe
+        text: This is powerful webhook for k8s
+        url: https://k-cloud-labs.github.io/kinitiras-doc
+        buttonText: Free trial
+      - title: kluster-capacity
+        icon: laptop-cloud
+        text: Kubernetes resources analysis tool
+        url: https://github.com/k-cloud-labs/kluster-capacity
+        buttonText: Get started
+      - title: Add-ons & plugins
+        icon: plug-cloud
+        text: Other somethings
+        url: https://github.com/k-cloud-labs
+        buttonText: Get started
+  section2:
+    title: You're here because you want the best
+    subtitle: And we know it
+    features:
+      - title: Powerful and unified interface
+        text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        # Icon (from /images/illustrations/icons/___.svg)
+        icon: laptop-globe
+      - title: Cross-device synchronisation
+        text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        icon: doc-sync
+      - title: Nomad system
+        text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        icon: mobile-feed
+  section3:
+    title: A powerful webhook for Kubernetes
+    subtitle: To rule them all
+    image: other/kinitiras.png
+    buttonText: Get started
+    buttonLink: https://k-cloud-labs.github.io/kinitiras-doc/
+  section4:
+    title: Our team is here!
+    subtitle: Here is our team member and their thoughts
+    clients:
+      - name: Kaku Li
+        quote: Middle-aged oily man.
+        job: Core member
+        img: kaku-face
+      - name: Yusan Kurban
+        quote: Code with love and always stay with lights.
+        job: Core member
+        img: yusank-face
+      - name: Xiangyu Sha
+        quote: Put something here, Put something here.
+        job: Core member
+        img: xiangyu-face
+      - name: Hao Fan
+        quote: Put something here, Put something here.
+        job: Core member
+        img: fanhao-face
+#  section5:
+#    title: Drop us a line or two
+#    subtitle: We'd love to hear from you
+#    buttonText: Send Message
+    # action: https://formspree.io/f/<form_id>
+    # method: POST
+  footer:
+    # Logo (from /images/logos/___)
+    logo: logo-text.png
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+      - link: https://github.com/k-cloud-labs
+        # Icons are from Font Awesome
+        icon: github
+      - link: https://facebook.com/#
+        icon: facebook
+      - link: https://twitter.com/kcloudlabs
+        icon: twitter
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+          - text: Discover features
+            link: /
+          - text: Why choose our product?
+            link: /
+          - text: Compare features
+            link: /
+          - text: Our roadmap
+            link: /
+          - text: Our ambitions
+            link: /
+      column2:
+        title: "Docs"
+        links:
+          - text: Get started
+            link: /
+          - text: User guides
+            link: /
+          - text: Admin guide
+            link: /
+          - text: Developers
+            link: /
+      column3:
+        title: "Member Blogs"
+        links:
+          - text: Kakus' blog
+            link: https://www.likakuli.com/
+          - text: Yusank's Space
+            link: https://yusank.space
