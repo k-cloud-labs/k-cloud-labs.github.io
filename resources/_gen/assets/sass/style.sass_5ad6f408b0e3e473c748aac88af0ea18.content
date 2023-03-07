@@ -7130,4 +7130,52 @@ Article Styles
     width: 8rem;
     color: #a9a9b3; }
 
+/* ==========================================================================
+Paginator Styles
+========================================================================== */
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  white-space: nowrap;
+  width: 100%;
+  padding: 1rem 0 0; }
+  .pagination a {
+    font-size: .8rem;
+    color: #bfbfbf;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    padding: 5px 5px;
+    text-decoration: none; }
+  .pagination li {
+    padding-bottom: 3px;
+    margin: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline; }
+    .pagination li.disabled {
+      display: none; }
+    .pagination li:hover a {
+      color: #F39200; }
+    .pagination li:before, .pagination li:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 3px;
+      background: #F39200;
+      bottom: 0; }
+    .pagination li:before .active, .pagination li:after .active {
+      width: 100%; }
+    .pagination li:before {
+      left: 50%; }
+    .pagination li:after {
+      right: 50%; }
+    .pagination li:hover:before, .pagination li:hover:after {
+      width: 50%; }
+    .pagination li.active a {
+      color: #F39200; }
+    .pagination li.active:before, .pagination li.active:after {
+      width: 60%; }
+
 /*# sourceMappingURL=style.css.map */

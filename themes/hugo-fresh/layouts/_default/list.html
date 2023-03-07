@@ -16,7 +16,7 @@
             </div>
             <div class="archive">
                     <!-- Ranges through content/posts/*.md -->
-                    {{ range .Pages.ByDate.Reverse }}
+                    {{ range .Paginator.Pages.ByDate.Reverse }}
 
                         <article class="archive-item">
 <!--                            {{- $author := .Params.author | default "klabs" }}-->
@@ -27,8 +27,10 @@
                             <span class="archive-item-date" >{{.Date.Format "2006-01-02"}}</span>
                         </article>
                     {{ end }}
+<!--                    {{ template "_internal/pagination.html" . }}-->
             </div>
         </div>
+                {{ partial "paginator.html" . }}
     </section>
 </main>
 
