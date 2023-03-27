@@ -11,7 +11,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true # Allows you to write raw html in your md files
-paginate: 2
+paginate: 10
 params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
@@ -43,18 +43,20 @@ params:
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
-      - logo: systek
-        url: https://google.com
-      - logo: tribe
-        url: https://stefma.github.io/hugo-fresh/
-      - logo: kromo
-        url: https://github.com/StefMa/hugo-fresh
-      - logo: infinite
-        url: https://hugo-fresh.vercel.app/
-      - logo: gutwork
-        url: https://bulma.io/
+#      - logo: systek
+#        url: https://google.com
+#      - logo: tribe
+#        url: https://stefma.github.io/hugo-fresh/
+#      - logo: kromo
+#        url: https://github.com/StefMa/hugo-fresh
+#      - logo: infinite
+#        url: https://hugo-fresh.vercel.app/
+#      - logo: gutwork
+#        url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+    - title: Home
+      url: /
     - title: Features
       url: /features
     - title: Blogs
@@ -62,9 +64,9 @@ params:
     - title: Projects
       sublinks:
         - title: kinitires
-          url: /
+          url: https://k-cloud-labs.github.io/kinitiras-doc
         - title: kluster-capacity
-          url: /
+          url: /kluster-capacity
     - title: About Us
       url: /about-us
       button: true
@@ -93,14 +95,13 @@ params:
     features:
       - title: Powerful and unified interface
         text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-        # Icon (from /images/illustrations/icons/___.svg)
         icon: laptop-globe
       - title: Cross-device synchronisation
         text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
         icon: doc-sync
-      - title: Nomad system
-        text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-        icon: mobile-feed
+#      - title: Nomad system
+#        text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+#        icon: mobile-feed
   section3:
     title: A powerful webhook for Kubernetes
     subtitle: To rule them all
@@ -124,7 +125,7 @@ params:
         job: Core member
         img: xiangyu-face
       - name: Hao Fan
-        quote: Put something here, Put something here.
+        quote: A lazy and chubby programmer.
         job: Core member
         img: fanhao-face
 #  section5:
